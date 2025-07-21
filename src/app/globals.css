@@ -24,3 +24,70 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* 3D Cube Styles */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.transform-style-preserve-3d {
+  transform-style: preserve-3d;
+}
+
+@keyframes spin-3d {
+  0% {
+    transform: var(--base-rotation) rotateY(0deg);
+  }
+  100% {
+    transform: var(--base-rotation) rotateY(360deg);
+  }
+}
+
+.animate-spin-3d {
+  animation: spin-3d 3s linear infinite;
+}
+
+/* Float Animation - Gentle up and down movement */
+@keyframes float {
+  0%, 100% {
+    transform: var(--base-rotation) translateY(0px);
+  }
+  50% {
+    transform: var(--base-rotation) translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Look Animation - Turn left and right (Y-axis) */
+@keyframes look {
+  0%, 100% {
+    transform: var(--base-rotation) rotateY(0deg);
+  }
+  25% {
+    transform: var(--base-rotation) rotateY(-15deg);
+  }
+  75% {
+    transform: var(--base-rotation) rotateY(15deg);
+  }
+}
+
+.animate-look {
+  animation: look 4s ease-in-out infinite;
+}
+
+/* Nod Animation - Up and down nodding (X-axis) */
+@keyframes nod {
+  0%, 100% {
+    transform: var(--base-rotation) rotateX(0deg);
+  }
+  50% {
+    transform: var(--base-rotation) rotateX(8deg);
+  }
+}
+
+.animate-nod {
+  animation: nod 2s ease-in-out infinite;
+}
