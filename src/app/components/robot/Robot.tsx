@@ -49,7 +49,7 @@ export default function Robot() {
         >
           {/* Front Face */}
           <div
-            className='absolute flex h-full w-full items-center justify-center rounded-2xl border-2 border-gray-200 bg-white shadow-lg'
+            className='absolute flex h-full w-full items-center justify-center rounded-2xl border-2 border-gray-200 bg-white shadow-lg select-none'
             style={{ transform: 'translateZ(4rem)' }}
           >
             <div className='font-mono text-lg text-gray-800'>
