@@ -36,10 +36,10 @@ body {
 
 @keyframes spin-3d {
   0% {
-    transform: var(--base-rotation) rotateY(0deg);
+    transform: var(--base-rotation) rotateZ(-20deg) rotateY(0deg);
   }
   100% {
-    transform: var(--base-rotation) rotateY(360deg);
+    transform: var(--base-rotation) rotateZ(-20deg) rotateY(360deg);
   }
 }
 
