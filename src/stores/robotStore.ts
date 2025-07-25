@@ -40,7 +40,7 @@ export const useRobotStore = create<RobotState>((set, get) => ({
   hat: 'sapling',
   position: { x: 0, y: 0 },
   rotation: { x: 0, y: 0, z: 0 },
-  currentAnimation: 'loading',
+  currentAnimation: 'float',
   isAnimating: true,
   
   // Actions
